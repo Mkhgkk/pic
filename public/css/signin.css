@@ -1,0 +1,51 @@
+body {
+    font-family: Roboto;
+    background-color: rgb(1, 73, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin {
+    background-color: #1a0033c7;
+    width: 400px;
+    color:rgb(255, 255, 255);
+    padding: 40px;
+    box-shadow: 10px 10px 25px #00000080;
+    text-align: center;
+}
+
+.signin input {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 22px;
+    outline: none;
+    color: aliceblue;
+}
+
+.signin input[type="submit"]{
+    width: 150px;
+    border: 2px solid #2ecc71;
+    cursor: pointer;
+}
+
+.signin input[type="text"], .signin input[type="password"]{
+    border: 2px solid #382ecc;
+    width: 220px;
+}
+
+.signin input[type="text"]:focus, .signin input[type="password"]:focus{
+    border: 2px solid #2ecc2e;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.signin input[type="submit"]:hover{
+    border: 2px solid #2ecc71;
+    transition: 0.5s;
+    width: 220px;
+}
