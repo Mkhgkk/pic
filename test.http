@@ -1,0 +1,45 @@
+@url=http://localhost:3001
+@json=Content-Type: application/json
+
+###
+
+get {{url}}/pic
+
+###
+post {{url}}
+
+### 查询所有用户
+get {{url}}/users
+
+### 注册
+post {{url}}/register
+# Content-Type: application/json
+{{json}}
+
+{
+  "username": "user2",
+  "password": "123456"
+}
+
+###po文
+
+post {{url}}/pic
+{{json}}
+
+{
+  "username": "text",
+  "password": "123456"
+}
+
+### 登录
+post {{url}}/login
+{{json}}
+
+{
+  "username": "root",
+  "password": "123456"
+}
+
+### 个人信息
+get {{url}}/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlNDc1ODcyOTM2Mjg2NWE0MDk4YmRhYSIsImlhdCI6MTU4MTczNTAyM30.Nm6UhPY7EfP-WQIDFldayXzFoJlt5oIgVhidzDPy0gc
